@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+  <head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js" charset="utf-8"></script>
+    <meta charset="utf-8">
+    <title>Github api</title>
+  </head>
+
+  <header>
+    <form id ="searchGit" >
+
+<div class="entirepage">
+ <input  id="searchBar" type="text" name="FirstName" placeholder="UserName" >
+ <button id ="searchButton" type="button"  onclick= "getSearch()" >Search</button>
+</form>
+  </header>
+
+  <body>
+<div class="">
+  <p id="userProfileHeader" >User Profile</p>
+    <p id="userReposHeader" >User repos</p>
+
+</div>
+<br>
+<br><br><br>
+
+
+<div class="body">
+    <div class="userProfile">
+      <br>
+      <img src="" id="profilepic" height="200" width="42">
+      <p class="leftList" id="userName">userName</p>
+      <p class="leftList"id="name">name</p>
+      <p class="leftList" id="userEmail">Email</p>
+      <p class="leftList" id = "location">Location</p>
+      <p class="leftList"id = "numGists">Number of Gists</p>
+
+    </div>
+
+          <div id ="userRepos" class="userRepos"  style="overflow: scroll ;max-height: 500px; width: 45%;visibility:hidden">
+        </div>
+        </div>
+  </body>
+  </div>
+</html>
